@@ -80,7 +80,7 @@ namespace BusinessLogic
                     CarPlateNumber = x.Car != null ? x.Car.PlateNumber : "",
                     CarPrice = x.Car != null ? x.Car.Price : 0,
                     CarYear = x.Car != null ? x.Car.ProductionYear : "",
-                    CarManufacturerName = ""
+                    CarManufacturerName = x.Car.Manufacturer != null ? x.Car.Manufacturer.ManufacturerName : ""
                 }).ToList();
             if (dataObj == null)
             {
