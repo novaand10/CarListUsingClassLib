@@ -1,0 +1,33 @@
+﻿@model List<DAL.Models.CarListingView>
+@{ ViewBag.Title = "CarListing"; }
+
+<h2>CarListing Import</h2>
+
+<table>
+    <tr>
+        <th>Description</th>
+        <th>Plate Number</th>
+        <th>Year</th>
+        <th>Manufacturer</th>
+        <th>Price</th>
+        <th>Plate Number Expired</th>
+        <th>Car Status</th>
+        <th>Import Date</th>
+    </tr>
+    @foreach (var car in Model)
+    {
+    if (car.CarType == "CBU"){
+    <tr>
+        <td> @car.CarDescription</td>
+        <td> @car.CarPlateNumber</td>
+        <td> @car.CarYear</td>
+        <td> @car.CarManufacturerName</td>
+        <td> @car.CarPrice</td>
+        <td> @car.CarExpireDate</td>
+        <td> @car.CarStatus</td>
+        <td> @car.CarImportDate</td>
+    </tr>
+    }
+    }
+</table>
+

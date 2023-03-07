@@ -1,0 +1,26 @@
+/* Add Column 
+     [CarType]         NVARCHAR (50)  NULL,
+    [ExpiredDate]     DATETIME       NULL,
+    [ImportDate]      DATETIME       NULL,
+    [AssemblyDate]    DATETIME       NULL, */
+
+
+CREATE TABLE [dbo].[Cars] (
+    [Id]              INT            IDENTITY (1, 1) NOT NULL,
+    [Description]     NVARCHAR (255) NULL,
+    [ProductionYear]  NVARCHAR (50)  NULL,
+    [Price]           DECIMAL (18)   NULL,
+    [PlateNumber]     NVARCHAR (255) NULL,
+    [MachineNumber]   NVARCHAR (255) NULL,
+    [OwnershipNumber] NVARCHAR (255) NULL,
+    [CreatedBy]       NVARCHAR (255) NULL,
+    [CreatedDate]     NVARCHAR (255) NULL,
+    [UpdatedBy]       NVARCHAR (255) NULL,
+    [UpdatedDate]     NVARCHAR (255) NULL,
+    [Manufacturer_Id] NCHAR (10)     NULL,
+    [CarType]         NVARCHAR (50)  NULL,
+    [ExpiredDate]     DATETIME       NULL,
+    [ImportDate]      DATETIME       NULL,
+    [AssemblyDate]    DATETIME       NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
