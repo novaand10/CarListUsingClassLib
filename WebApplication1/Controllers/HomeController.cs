@@ -6,8 +6,6 @@ using DAL;
 using System.Web.Mvc;
 using BusinessLogic;
 using BusinessLogic.Interface;
-using WebApplication1.Models;
-using WebApplication1.ViewModels;
 
 namespace WebApplication1.Controllers
 {
@@ -45,7 +43,7 @@ namespace WebApplication1.Controllers
 
         public ActionResult CarListingAbc()
         {
-            IListingCarAbc _iList = new ListingCarAbc(_dbContext);
+            IListingCar _iList = new ListingCar(_dbContext);
             var cars = _iList.GetListCarAbc().ToList();
 
             return View(cars);

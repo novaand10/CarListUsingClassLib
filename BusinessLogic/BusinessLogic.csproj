@@ -56,7 +56,6 @@
     <Compile Include="Interface\IListingCar.cs" />
     <Compile Include="Interface\IListingCarAbc.cs" />
     <Compile Include="ListingCar.cs" />
-    <Compile Include="ListingCarAbc.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

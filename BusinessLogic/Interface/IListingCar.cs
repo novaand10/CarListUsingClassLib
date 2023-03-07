@@ -10,5 +10,6 @@ namespace BusinessLogic.Interface
     public interface IListingCar
     {
         List<CarListingView> GetListCar();
+        List<CarListingView> GetListCarAbc();
     }
 }

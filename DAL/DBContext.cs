@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Web;
 using DAL.Models;
@@ -19,7 +20,7 @@ namespace DAL
             return new DBContext();
         }
         public DbSet<Car> Cars { get; set; }
+        public DbSet<CarDetail> CarDetail { get; set; }
         public DbSet<CarManufacturer> CarManufacturers { get; set; }
-
     }
 }

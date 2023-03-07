@@ -14,9 +14,9 @@ namespace DAL.Models
         public DateTime CreatedDate { get; set; }
         public string UpdatedBy { get; set; }
         public DateTime UpdatedDate { get; set; }
-        public string CarType { get; set; }
-        public DateTime ExpiredDate { get; set; }
-        public DateTime ImportDate { get; set; }
-        public DateTime AssemblyDate { get; set; }
+        //public string CarType { get; set; }
+        //public DateTime ExpiredDate { get; set; }
+        //public DateTime ImportDate { get; set; }
+        //public DateTime AssemblyDate { get; set; }
     }
 }

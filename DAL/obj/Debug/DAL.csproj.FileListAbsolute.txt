@@ -10,3 +10,14 @@ C:\Users\Yuzarsif Corp\Documents\APPS\PROGRAMMING\TESTING\testapp-main\testapp-m
 C:\Users\Yuzarsif Corp\Documents\APPS\PROGRAMMING\TESTING\testapp-main\testapp-main\DAL\obj\Debug\DAL.dll
 C:\Users\Yuzarsif Corp\Documents\APPS\PROGRAMMING\TESTING\testapp-main\testapp-main\DAL\obj\Debug\DAL.pdb
 C:\Users\Yuzarsif Corp\Documents\APPS\PROGRAMMING\TESTING\testapp-main\testapp-main\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Yuzarsif Corp\Documents\APPS\PROGRAMMING\TESTING\CarListUsingClassLib\DAL\bin\Debug\DAL.dll.config
+C:\Users\Yuzarsif Corp\Documents\APPS\PROGRAMMING\TESTING\CarListUsingClassLib\DAL\bin\Debug\DAL.dll
+C:\Users\Yuzarsif Corp\Documents\APPS\PROGRAMMING\TESTING\CarListUsingClassLib\DAL\bin\Debug\DAL.pdb
+C:\Users\Yuzarsif Corp\Documents\APPS\PROGRAMMING\TESTING\CarListUsingClassLib\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Yuzarsif Corp\Documents\APPS\PROGRAMMING\TESTING\CarListUsingClassLib\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Yuzarsif Corp\Documents\APPS\PROGRAMMING\TESTING\CarListUsingClassLib\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Yuzarsif Corp\Documents\APPS\PROGRAMMING\TESTING\CarListUsingClassLib\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Yuzarsif Corp\Documents\APPS\PROGRAMMING\TESTING\CarListUsingClassLib\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Yuzarsif Corp\Documents\APPS\PROGRAMMING\TESTING\CarListUsingClassLib\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Yuzarsif Corp\Documents\APPS\PROGRAMMING\TESTING\CarListUsingClassLib\DAL\obj\Debug\DAL.dll
+C:\Users\Yuzarsif Corp\Documents\APPS\PROGRAMMING\TESTING\CarListUsingClassLib\DAL\obj\Debug\DAL.pdb
