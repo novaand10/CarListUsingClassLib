@@ -1,9 +1,14 @@
-/* Add Column 
-     [CarType]         NVARCHAR (50)  NULL,
-    [ExpiredDate]     DATETIME       NULL,
-    [ImportDate]      DATETIME       NULL,
-    [AssemblyDate]    DATETIME       NULL, */
+Add Table 
 
+CREATE TABLE [dbo].[CarDetails] (
+    [Id]           INT           NOT NULL,
+    [CarType]      NVARCHAR (50) NULL,
+    [ExpiredDate]  DATETIME      NULL,
+    [ImportDate]   DATETIME      NULL,
+    [AssemblyDate] DATETIME      NULL,
+    [Car_Id]       INT           NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
 
 CREATE TABLE [dbo].[Cars] (
     [Id]              INT            IDENTITY (1, 1) NOT NULL,
@@ -18,9 +23,36 @@ CREATE TABLE [dbo].[Cars] (
     [UpdatedBy]       NVARCHAR (255) NULL,
     [UpdatedDate]     NVARCHAR (255) NULL,
     [Manufacturer_Id] NCHAR (10)     NULL,
-    [CarType]         NVARCHAR (50)  NULL,
-    [ExpiredDate]     DATETIME       NULL,
-    [ImportDate]      DATETIME       NULL,
-    [AssemblyDate]    DATETIME       NULL,
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );
+
+CREATE TABLE [dbo].[CarManufacturers] (
+    [Id]                             INT            IDENTITY (1, 1) NOT NULL,
+    [ManufacturerRegistrationNumber] NVARCHAR (255) NULL,
+    [ManufacturerName]               NVARCHAR (255) NULL,
+    [ManufacturerAddress]            NVARCHAR (255) NULL,
+    [CreatedBy]                      NVARCHAR (255) NULL,
+    [CreatedDate]                    NVARCHAR (255) NULL,
+    [UpdatedBy]                      NVARCHAR (255) NULL,
+    [UpdatedDate]                    NVARCHAR (255) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+Data 
+
+SET IDENTITY_INSERT [dbo].[Cars] ON
+INSERT INTO [dbo].[Cars] ([Id], [Description], [ProductionYear], [Price], [PlateNumber], [MachineNumber], [OwnershipNumber], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [Manufacturer_Id]) VALUES (1, N'Xenia HItam', N'2012', CAST(100000000 AS Decimal(18, 0)), N'B 3421 AS', N'MC0001', N'OW0001', NULL, N'2023-01-01', NULL, N'2023-01-01', N'2         ')
+INSERT INTO [dbo].[Cars] ([Id], [Description], [ProductionYear], [Price], [PlateNumber], [MachineNumber], [OwnershipNumber], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [Manufacturer_Id]) VALUES (2, N'Grand Max Putih', N'2012', CAST(100000000 AS Decimal(18, 0)), N'B 3422 AS', N'MC0001', N'OW0001', NULL, N'2023-01-01', NULL, N'2023-01-01', N'2         ')
+INSERT INTO [dbo].[Cars] ([Id], [Description], [ProductionYear], [Price], [PlateNumber], [MachineNumber], [OwnershipNumber], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [Manufacturer_Id]) VALUES (3, N'Grand Max Pickup', N'2012', CAST(100000000 AS Decimal(18, 0)), N'B 3423 AS', N'MC0001', N'OW0001', NULL, N'2023-01-01', NULL, N'2023-01-01', N'2         ')
+SET IDENTITY_INSERT [dbo].[Cars] OFF
+
+SET IDENTITY_INSERT [dbo].[CarManufacturers] ON
+INSERT INTO [dbo].[CarManufacturers] ([Id], [ManufacturerRegistrationNumber], [ManufacturerName], [ManufacturerAddress], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (1, N'MAN001', N'Honda', N'Cikarang', NULL, N'2023-01-01', NULL, N'2023-01-01')
+INSERT INTO [dbo].[CarManufacturers] ([Id], [ManufacturerRegistrationNumber], [ManufacturerName], [ManufacturerAddress], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (2, N'MAN002', N'Daihatsu', N'Cikarang', NULL, N'2023-01-01', NULL, N'2023-01-01')
+INSERT INTO [dbo].[CarManufacturers] ([Id], [ManufacturerRegistrationNumber], [ManufacturerName], [ManufacturerAddress], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (3, N'MAN003', N'Toyota', N'Cikarang', NULL, N'2023-01-01', NULL, N'2023-01-01')
+SET IDENTITY_INSERT [dbo].[CarManufacturers] OFF
+
+INSERT INTO [dbo].[CarDetails] ([Id], [CarType], [ExpiredDate], [ImportDate], [AssemblyDate], [Car_Id]) VALUES (1, N'Local', N'2027-01-01 00:00:00', N'2023-01-01 00:00:00', N'2023-01-01 00:00:00', 1)
+INSERT INTO [dbo].[CarDetails] ([Id], [CarType], [ExpiredDate], [ImportDate], [AssemblyDate], [Car_Id]) VALUES (2, N'CBU', N'2027-01-01 00:00:00', N'2023-01-01 00:00:00', N'2023-01-01 00:00:00', 2)
+INSERT INTO [dbo].[CarDetails] ([Id], [CarType], [ExpiredDate], [ImportDate], [AssemblyDate], [Car_Id]) VALUES (3, N'Local', N'2024-01-01 00:00:00', N'2023-01-01 00:00:00', N'2023-01-01 00:00:00', 3)
+
